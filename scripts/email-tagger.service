@@ -1,0 +1,16 @@
+[Unit]
+Description=Email Tagger Service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/email-tagger
+ExecStart=/usr/bin/python3 /home/pi/email-tagger/main.py
+Restart=always
+RestartSec=10
+Environment=POLL_INTERVAL=60
+# EnvironmentFile=/home/pi/email-tagger/.env
+
+[Install]
+WantedBy=multi-user.target

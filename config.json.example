@@ -1,0 +1,13 @@
+{
+    "IMAP_SERVER": "imap.example.com",
+    "IMAP_USER": "myemail@example.com",
+    "IMAP_PASSWORD": "secretpassword",
+    "INBOX_FOLDER": "INBOX",
+    "ARCHIVE_FOLDER": "Archive",
+    "POLL_INTERVAL": 60,
+    "TAG_MAPPING": {
+        "Work": "WorkFolder",
+        "Personal": "PersonalFolder",
+        "UWCU": ".Finance.Banks.University of Wisconsin Credit Union"
+    }
+}
