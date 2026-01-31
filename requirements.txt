@@ -1,3 +1,4 @@
 imapclient
 scikit-learn
 numpy
+beautifulsoup4

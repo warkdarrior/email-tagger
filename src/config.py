@@ -17,6 +17,7 @@ class Config:
 
     def load_from_file(self, config_path="config.json"):
         if os.path.exists(config_path):
+            logger.info(f"Loading configuration from {os.path.abspath(config_path)}")
             with open(config_path, 'r') as f:
                 data = json.load(f)
                 self.IMAP_SERVER = data.get("IMAP_SERVER", self.IMAP_SERVER)
